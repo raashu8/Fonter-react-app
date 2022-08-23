@@ -35,7 +35,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
-            <Textarea heading="Enter some text here" mode={mode} />
+            <Textarea heading="Enter some text here" mode={mode} />     
           </Route>
           <Route exact path="/about">
             <About />
