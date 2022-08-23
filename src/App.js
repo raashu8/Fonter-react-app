@@ -2,8 +2,7 @@
 import Navbar from "./components/Navbar";
 import Textarea from "./components/Textarea";
 import React, { useState } from "react";
-import About from "./components/About";
-// import { Switch, Route, BrowserRouter } from "react-router-dom";
+// import About from "./components/About";
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -14,17 +13,19 @@ function App() {
       setMode("light");
       setTitName("Activate Dark Mode");
       document.body.style.backgroundColor = "white";
-      document.title = "Fonter App";
+      document.title= "Fonter App";
+
     } else {
       setMode("dark");
       setTitName("Activate Light Mode");
       document.body.style.backgroundColor = "#002451";
-      document.title = "Fonter Dark Mode";
+      document.title= "Fonter Dark Mode";
     }
   };
-                               
+
   return (
     <>
+    
       <Navbar
         title="Home"
         subtit="About"
@@ -33,8 +34,8 @@ function App() {
         new12={titname}
       />
 
-            <Textarea heading="Enter some text here" mode={mode} />
-            <About />
+      <Textarea heading="Enter some text here" mode={mode} />
+      {/* <About /> */}
     </>
   );
 }
