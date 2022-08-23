@@ -4,7 +4,9 @@ export default function Navbar(props) {
   return (
     <div>
       {" "}
-      <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
+      <nav
+        className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
+      >
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             <img
@@ -29,36 +31,49 @@ export default function Navbar(props) {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" s href="/home">
+                <a
+                  className="nav-link active"
+                  aria-current="page"
+                  s
+                  href="/"
+                >
                   {props.title}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/about">
-                  {props.subtit}
                 </a>
               </li>
             </ul>
           </div>
-            <div className="form-check form-switch">
-  <input className="form-check-input" type="checkbox" aria-checked="false" onClick={props.toglemode} role="switch" id="flexSwitchCheckDefault"/>
-  <label className={`form-check-label text-${props.mode=== 'light' ? 'dark': 'light'}`} htmlFor="flexSwitchCheckDefault">{props.new12}</label>
-</div>
+          <div className="form-check form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              aria-checked="false"
+              onClick={props.toglemode}
+              role="switch"
+              id="flexSwitchCheckDefault"
+            />
+            <label
+              className={`form-check-label text-${
+                props.mode === "light" ? "dark" : "light"
+              }`}
+              htmlFor="flexSwitchCheckDefault"
+            >
+              {props.new12}
+            </label>
+          </div>
         </div>
       </nav>
-
     </div>
   );
 }
 
-// // PROP TYPES SETTING 
+// // PROP TYPES SETTING
 
 // Navbar.propTypes = {
 //   title: PropTypes.string.isRequired,
 //   subtit: PropTypes.number,
 // };
 
-// // PROP DEFAULT TYPES SETTING 
+// // PROP DEFAULT TYPES SETTING
 
 // Navbar.defaultProps = {
 //   title: 'SOOME',
