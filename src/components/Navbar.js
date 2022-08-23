@@ -8,9 +8,9 @@ export default function Navbar(props) {
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             <img
-              href="%PUBLIC_URL%/logg.png"
+              src="./Imgs/logg.png"
               alt=""
-              className="img-new" 
+              className="img-new"
               width="30"
               height="24"
             />

@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Textarea from "./components/Textarea";
 import React, { useState } from "react";
 import About from "./components/About";
-import { Switch, Route, BrowserRouter } from "react-router-dom";
+// import { Switch, Route, BrowserRouter } from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -32,19 +32,9 @@ function App() {
         mode={mode}
         new12={titname}
       />
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/">
-            <Textarea heading="Enter some text here" mode={mode} />     
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/home">
+
             <Textarea heading="Enter some text here" mode={mode} />
-          </Route>
-        </Switch>
-      </BrowserRouter>
+            <About />
     </>
   );
 }
