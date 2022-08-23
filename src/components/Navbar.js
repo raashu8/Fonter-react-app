@@ -29,12 +29,12 @@ export default function Navbar(props) {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" s href="/">
+                <a className="nav-link active" aria-current="page" s href="/home">
                   {props.title}
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link" href="/about">
                   {props.subtit}
                 </a>
               </li>
