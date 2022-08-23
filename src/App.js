@@ -22,7 +22,7 @@ function App() {
       document.title = "Fonter Dark Mode";
     }
   };
-
+                               
   return (
     <>
       <Navbar
