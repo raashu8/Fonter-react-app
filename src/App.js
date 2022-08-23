@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+// import Home from "./home";
+import Navbar from "./components/Navbar";
+import Textarea from "./components/Textarea";
+import React, { useState } from "react";
+import About from "./components/About";
 
 function App() {
+  const [mode, setMode] = useState("light");
+  const [titname, setTitName] = useState("Activate Dark Mode");
+
+  const changemode = () => {
+    if (mode === "dark") {
+      setMode("light");
+      setTitName("Activate Dark Mode");
+      document.body.style.backgroundColor = "white";
+      document.title= "Fonter App";
+    } else {
+      setMode("dark");
+      setTitName("Activate Light Mode");
+      document.body.style.backgroundColor = "#002451";
+      document.title= "Fonter Dark Mode";
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    
+      <Navbar
+        title="Home"
+        subtit="About"
+        toglemode={changemode}
+        mode={mode}
+        new12={titname}
+      />
+
+      <Textarea heading="Enter some text here" mode={mode} />
+      <About />
+    </>
   );
 }
 
