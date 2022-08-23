@@ -11,7 +11,7 @@ export default function Navbar(props) {
           <a className="navbar-brand" href="/">
             <img
               src="./Imgs/logg.png"
-              alt=""
+              alt="" 
               className="img-new"
               width="30"
               height="24"
