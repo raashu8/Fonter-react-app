@@ -1,4 +1,5 @@
 import React from "react";
+import FonterLog from "../Image/fonterLogo.png"
 // import PropTypes from "prop-types";
 export default function Navbar(props) {
   return (
@@ -10,11 +11,11 @@ export default function Navbar(props) {
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             <img
-              src="./Imgs/logg.png"
+              src={FonterLog}
               alt="" 
-              className="img-new"
-              width="30"
-              height="24"
+              // className="img-new"
+              width="45"
+              height="45"
             />
           </a>
           <button
