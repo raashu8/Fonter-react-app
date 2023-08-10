@@ -40,7 +40,7 @@ export default function Textarea(props) {
     text.select();
     navigator.clipboard.writeText(text.value);
     handleClickVariant();
-    enqueueSnackbar("Text copied sucessfully!!", { variant });
+    enqueueSnackbar("Text copied sucessfully !!", { variant });
   };
 
   const handleCssModulation = (variant) => {
