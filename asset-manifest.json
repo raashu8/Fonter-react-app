@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/Fonter-react-app/static/css/main.e6c13ad2.css",
-    "main.js": "/Fonter-react-app/static/js/main.96d40b0f.js",
+    "main.js": "/Fonter-react-app/static/js/main.b8e68f57.js",
     "static/js/787.9d4324ab.chunk.js": "/Fonter-react-app/static/js/787.9d4324ab.chunk.js",
+    "static/media/fonterLogo.png": "/Fonter-react-app/static/media/fonterLogo.847a15e222670a04fca1.png",
     "index.html": "/Fonter-react-app/index.html",
     "main.e6c13ad2.css.map": "/Fonter-react-app/static/css/main.e6c13ad2.css.map",
-    "main.96d40b0f.js.map": "/Fonter-react-app/static/js/main.96d40b0f.js.map",
+    "main.b8e68f57.js.map": "/Fonter-react-app/static/js/main.b8e68f57.js.map",
     "787.9d4324ab.chunk.js.map": "/Fonter-react-app/static/js/787.9d4324ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.96d40b0f.js"
+    "static/js/main.b8e68f57.js"
   ]
 }
